@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HideX</title>
+    <style>
+        /* Globální styl */
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://cdn.discordapp.com/attachments/1065146848484016158/1074149235341148160/bg_43.png?ex=6747272e&is=6745d5ae&hm=88faa8843a77562f9a9313380c0b16a44aa31f3f4f9bacc2bb9fca7cdd7b89db&'); /* URL tvého obrázku */
+            background-size: cover; /* Přizpůsobení velikosti */
+            background-repeat: no-repeat; /* Žádné opakování */
+            background-position: center; /* Vycentrování obrázku */
+            color: white;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        /* Nadpis stránky */
+        h1 {
+            font-size: 8em;
+            margin-bottom: 10px;
+            margin-top: -130px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Stín pro čitelnost */
+        }
+
+        /* Popis pod nadpisem */
+        .description {
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #ddd;
+            max-width: 600px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Stín pro čitelnost */
+        }
+
+        /* Kontejner pro loga */
+        .logos {
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Styl pro loga */
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Specifický styl pro Discord logo */
+        .discord-logo {
+            width: 120px;
+            height: 120px;
+            margin-top: -20px; /* Posun loga Discord nahoru */
+        }
+    </style>
+</head>
+<body>
+    <!-- Nadpis stránky -->
+    <h1>HideX</h1>
+
+    <!-- Popis pod nadpisem -->
+    <p class="description">
+        Hello, I'm a young developer and seller. Here are some of my socials. If you'd like to visit my shop, click on the shop icon.
+    </p>
+
+    <!-- Kontejner pro loga -->
+    <div class="logos">
+        <!-- Logo Instagramu -->
+        <a href="https://www.instagram.com/jakub.hidex/" target="_blank">
+            <img class="logo instagram-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+
+        <!-- Logo Discordu -->
+        <a href="https://discord.gg/KQZu3CbE7q" target="_blank">
+            <img class="logo discord-logo" src="https://cdn.discordapp.com/attachments/1292411070790766622/1311049382136647752/Discord-Logo.png?ex=67477162&is=67461fe2&hm=2df3b8f765b700a99a72b3adea52a02719320cffb08d22b300d15a8217cfa354&" alt="Discord">
+        </a>
+
+        <!-- Logo Shopu -->
+        <a href="https://evox.sellauth.com/" target="_blank">
+            <img class="logo cart-logo" src="https://cdn.discordapp.com/attachments/1292411070790766622/1311068405075546274/store-512.png?ex=6747831a&is=6746319a&hm=f03804ac392d38c84f08a93182b8519259ccd1795be1441d738b051eb737f688&" alt="Shop">
+        </a>
+    </div>
+</body>
+</html>
