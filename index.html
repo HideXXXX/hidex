@@ -94,9 +94,40 @@
             width: 40px;
             vertical-align: middle;
         }
+
+        /* Navigation Bar Styles */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #6f00ff;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="films.html">Films</a>
+    </nav>
+
     <!-- Nadpis stránky -->
     <h1>HideX</h1>
 
@@ -187,6 +218,6 @@
         } else {
             document.getElementById('location').innerText = "Prohlížeč nepodporuje geolokaci.";
         }
-    </script>    
+    </script>   
 </body>
 </html>
